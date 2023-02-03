@@ -1,0 +1,20 @@
+redelk workshop 30 min:
+- background and concepts of redelk
+- technical components overview
+- lab setup 15min:
+  - network setup: 
+    - per student: 1 redelk server, 1 c2 server, 1 redir, 1 windows host for c2 client
+    - 1 central attacking lab: windows victom host per student and central ad, plus some other resources.
+    - 1 central slack channel for the workshop, precreate channels per student and generate the slack web hooks
+    - 1 full setup for the trainers with lots of data that we can use for demo's.
+  - c2 systems: thinkin OST Stage1 and Cobalt Strike, and lets see how far the Sliver implementation is by then
+  - student prep: 
+    - mandatory: bring a laptop that can de ssh and rdp (possible quacamole)
+    - optionally: they should have generated VT API key, email server setup details, email addresses of end users for OST portal connection.
+- Assignments - each step should include troublehsooting steps:
+  - Assignment 1 20min: installation -> decide between let them manually do stuff or have them run ansible
+  - assignment 2 10min: make sure you have a working setup -> start c2 servers and start implants (can automate a large part for CS with CNA scripts, for OST not possible)
+  - assignment 3 20min: experience operational oversight -> several assignments to let htem expereince where the data is, e.gh. screenshots, beacon log files for download, mitre mappings, etc. Backup, we have an installation that has more than enough data in it.
+  - assignment 4 10min: RedELK configuration -> configure alarm configs, e.g. api keys, email account, teams/slack webhooks.
+  - assignment 5 45min: Hunting -> some hunting for blue team detections, e.g. upload of mimikatz.exe to target or make them hit redir path c2-something from another IP address, connection from weird user agent like curl, manual alarm, backend alarm module
+  - assignnent 6 20min: Advanced modifications of RedELK -> something about adding your custom C2 framework, help with collobration e.g. look at current PRs or issues on github
