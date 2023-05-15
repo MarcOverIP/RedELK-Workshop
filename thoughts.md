@@ -17,4 +17,4 @@ redelk workshop 30 min:
   - assignment 3 20min: experience operational oversight -> several assignments to let htem expereince where the data is, e.gh. screenshots, beacon log files for download, mitre mappings, etc. Backup, we have an installation that has more than enough data in it.
   - assignment 4 10min: RedELK configuration -> configure alarm configs, e.g. api keys, email account, teams/slack webhooks.
   - assignment 5 45min: Hunting -> some hunting for blue team detections, e.g. upload of mimikatz.exe to target or make them hit redir path c2-something from another IP address, connection from weird user agent like curl, manual alarm, backend alarm module
-  - assignnent 6 20min: Advanced modifications of RedELK -> something about adding your custom C2 framework, help with collobration e.g. look at current PRs or issues on github
+  - assignnent 6 20min: Advanced modifications of RedELK -> 1) walkthrough/explanation of adding your custom C2 framework, 2) adding a new alarm
